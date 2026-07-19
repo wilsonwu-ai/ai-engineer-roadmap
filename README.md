@@ -6,7 +6,7 @@ Most "AI engineer" roadmaps open with linear algebra, then statistics, then a 20
 
 This note is my ELI5 of that path. I don't train models; I build *with* them, and I'm walking this roadmap myself. I built it Claude-first for one honest reason: Anthropic ships the whole stack in one place — model, API, coding agent, agentic loops, memory, skills, deployment — so you can learn every layer without stitching six vendors together. The ideas generalize to any frontier model.
 
-> **Prompt & credit:** this roadmap was sparked by [@0xCodez](https://x.com/0xCodez)'s "Claude-first AI Engineer" write-up ([movez.substack.com](https://movez.substack.com)) and [Google's 1-hour "AI engineer in 2026" course](https://www.youtube.com/results?search_query=google+ai+engineer+2026+course). The explanations, diagrams, and code here are my own — and where the source cited eye-popping numbers, I've flagged them rather than repeated them (see the honesty box at the end). Corrections welcome.
+> **Prompt & credit:** this roadmap was sparked by **0xMovez**'s "Claude-first AI Engineer" write-up ([movez.substack.com](https://movez.substack.com)) and [Google's 1-hour "AI engineer in 2026" course](https://www.youtube.com/results?search_query=google+ai+engineer+2026+course). The explanations, diagrams, and code here are my own — and where the source cited eye-popping numbers, I've flagged them rather than repeated them (see the honesty box at the end). Corrections welcome.
 >
 > **The Phase 2–3 concepts, in runnable code:** [Agent Swarms →](https://github.com/wilsonwu-ai/agent-swarms) · [Inference Engineering (vLLM + KTransformers) →](https://github.com/wilsonwu-ai/inference-engineering) · [How Kimi scales open models →](https://github.com/wilsonwu-ai/scaling-open-models)
 
@@ -386,7 +386,7 @@ The roadmap itself — reframe → foundation → agent layer → production →
 
 ## Credits & further reading
 
-- **Prompt:** [@0xCodez](https://x.com/0xCodez) / [movez.substack.com](https://movez.substack.com) — the Claude-first AI-engineer write-up, and Google's 1-hour "AI engineer in 2026" course.
+- **Prompt:** **0xMovez** ([movez.substack.com](https://movez.substack.com)) — the Claude-first AI-engineer write-up, and Google's 1-hour "AI engineer in 2026" course.
 - **The docs to actually read:** [platform.claude.com/docs](https://platform.claude.com/docs) — Messages API, tool use, MCP, memory, skills. Build the three tiny projects *from* the docs; don't just read them.
 - **These concepts, done in code:** [Agent Swarms](https://github.com/wilsonwu-ai/agent-swarms) (multi-agent) · [Inference Engineering](https://github.com/wilsonwu-ai/inference-engineering) (how serving actually works — Phase 3 systems knowledge) · [How Kimi scales open models](https://github.com/wilsonwu-ai/scaling-open-models) (frontier-model literacy).
 
