@@ -6,7 +6,7 @@ Most "AI engineer" roadmaps open with linear algebra, then statistics, then a 20
 
 This note is my ELI5 of that path. I don't train models; I build *with* them, and I'm walking this roadmap myself. I built it Claude-first for one honest reason: Anthropic ships the whole stack in one place — model, API, coding agent, agentic loops, memory, skills, deployment — so you can learn every layer without stitching six vendors together. The ideas generalize to any frontier model.
 
-> **Prompt & credit:** this roadmap was sparked by **0xMovez**'s "Claude-first AI Engineer" write-up ([movez.substack.com](https://movez.substack.com)) and [Google's 1-hour "AI engineer in 2026" course](https://www.youtube.com/results?search_query=google+ai+engineer+2026+course). The explanations, diagrams, and code here are my own — and where the source cited eye-popping numbers, I've flagged them rather than repeated them (see the honesty box at the end). Corrections welcome.
+> **Prompt & credit:** this roadmap was sparked by **0xMovez**'s Claude-first write-up ([*Harness engineering with Claude: 14-step roadmap*](https://movez.substack.com/p/harness-engineering-with-claude-14)) and a Google "AI engineer in 2026" course (~1 hour; exact video not linked). The explanations, diagrams, and code here are my own — and where the source cited eye-popping numbers, I've flagged them rather than repeated them (see the honesty box at the end). Corrections welcome.
 >
 > **The Phase 2–3 concepts, in runnable code:** [Agent Swarms →](https://github.com/wilsonwu-ai/agent-swarms) · [Inference Engineering (vLLM + KTransformers) →](https://github.com/wilsonwu-ai/inference-engineering) · [How Kimi scales open models →](https://github.com/wilsonwu-ai/scaling-open-models)
 
@@ -139,7 +139,7 @@ Put it on GitHub with a README and tests. **One shipped project beats fifty cert
 
 ## Phase 2 · Month 3-4 — The Agent Layer
 
-This is where most people stall. They learn the API, build a chatbot, and stop. The **$200K+ roles in 2026 are agent-engineering roles, not prompt-engineering roles.** An agent is three ideas stacked: a *loop*, *tools*, and *coordination*.
+This is where most people stall. They learn the API, build a chatbot, and stop. The **best-paid roles in 2026 are agent-engineering roles, not prompt-engineering roles** (the exact salary numbers vary a lot — see the honesty box). An agent is three ideas stacked: a *loop*, *tools*, and *coordination*.
 
 ### 5. The agentic loop
 
@@ -231,7 +231,7 @@ Every company building agents needs someone who can wire a model to internal sys
 
 ### 8. Ship a multi-agent system
 
-One agent grinding a hard task serially is slow and gets lost. An **orchestrator** spawns a *swarm* of sub-agents that work in parallel — research, write, review — then aggregates their results. Same model, different *harness*. That harness is the gap between a $100K developer and a $300K AI engineer.
+One agent grinding a hard task serially is slow and gets lost. An **orchestrator** spawns a *swarm* of sub-agents that work in parallel — research, write, review — then aggregates their results. Same model, different *harness*. That harness is the gap between a solid developer and a top-paid AI engineer.
 
 ```mermaid
 flowchart TD
@@ -386,7 +386,7 @@ The roadmap itself — reframe → foundation → agent layer → production →
 
 ## Credits & further reading
 
-- **Prompt:** **0xMovez** ([movez.substack.com](https://movez.substack.com)) — the Claude-first AI-engineer write-up, and Google's 1-hour "AI engineer in 2026" course.
+- **Prompt:** **0xMovez** — [*Harness engineering with Claude: 14-step roadmap*](https://movez.substack.com/p/harness-engineering-with-claude-14) (movez.substack.com) — the Claude-first AI-engineer write-up, and a Google "AI engineer in 2026" course (~1 hour).
 - **The docs to actually read:** [platform.claude.com/docs](https://platform.claude.com/docs) — Messages API, tool use, MCP, memory, skills. Build the three tiny projects *from* the docs; don't just read them.
 - **These concepts, done in code:** [Agent Swarms](https://github.com/wilsonwu-ai/agent-swarms) (multi-agent) · [Inference Engineering](https://github.com/wilsonwu-ai/inference-engineering) (how serving actually works — Phase 3 systems knowledge) · [How Kimi scales open models](https://github.com/wilsonwu-ai/scaling-open-models) (frontier-model literacy).
 
